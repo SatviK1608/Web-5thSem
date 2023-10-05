@@ -1,0 +1,82 @@
+CSS-3
+
+
+1. Resize(runs with overflow:auto->reisze:horizontal;)
+    horizontal
+    verticle
+    both
+    none
+2. Cursor
+
+3. Measurement Units
+    Absolute
+    Relative
+
+4. Variables var() function    
+    :root{
+        --var_name:red;
+    }
+    .classA{
+        color:var(--var_name);
+    }
+
+5. calc() function
+    .classA{
+        width:calc(100% - 1em);
+        background-position:calc(100% - 50px) calc(100% - 20px);
+    }
+
+6. clip-path
+    
+7. background-clip
+
+8. shape-outside
+    circle()
+    ellipse()
+    inset()
+    polygon()
+
+9.  shape-margin
+
+10. filter
+
+11. transition
+
+12. transform
+
+13. perspective
+
+14. transform-style
+
+15. backface-visibility
+
+16. animation
+
+17. object-fit
+
+18. user select
+
+19. box-decoration-break
+
+20. quotes
+
+21. border-image
+
+22. Advance selectors
+        Descendant(" ")
+        Direct Child(">")
+        Adjacent Sibling Selector("+")
+        General Sibling Selector("~");
+        A[attr]
+        A[attr=val]
+        A[attr^=val]
+        A[attr|=val]
+        A[attr$=val]
+        A[attr*=val]
+        A[attr~=val]
+        Pseudo selectors
+        
+
+
+      
+

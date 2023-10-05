@@ -1,0 +1,37 @@
+h3{
+    background-color:blueviolet;
+    font-size: 45px;
+    border: 2px solid red;         /*color field is optional by default value is black   */
+    outline-offset:5px;            /*outline and border are kind of same thing but not in forms.Offset tells the gap b/w the element and the outline*/
+    outline: 2px solid black;
+    min-height: 40px;          /*default height */
+    max-height: 200px;         /*can increase upto max height of 200 and then the content overflows*/
+    box-sizing:border-box ;    /* ensure the size of content remains the same and margin + padding are adjusted within this size only*/
+    overflow: hidden;          /*default value is visible. auto will give scrollbar in vertical only whereas scroll gives scrollbar in both vertical and horizontal*/
+    overflow-x: scroll;
+    overflow-y: scroll;
+
+    /* border-top-right-radius:50% ;
+    border-top-left-radius:40px ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 30px; */
+    border-radius: 10px 20px 0px 0px / 40px 20px 0px 0px;     /*manipulate all 8 corners*/
+    font-size: 5em;          /*em is flexible,scalable unit that is converted by browser.1em=16px.It is relative to font size of parent ele*/
+                            /*rem is relative to the font size of root element(html element).If font size of html elemnt is 16pxz then 1rem=16px*/
+    
+}
+#div{
+    width: 90px;
+    height: 70px;
+    box-shadow: 2px 2px 5px 10px orange;   /*box-shadow:h-offset v-offset blur spread color *//* if no color given then takes color of the text*//*can take negative values*/
+    margin:30px;
+}
+
+
+
+
+
+/* Descendent Selector --> select specified ele of specified parent
+        eg: #header a{
+        }       //selects all a elements of parent ele with id header
+*/
