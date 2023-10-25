@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        delete
+        typeof
+        instance of
+        new
+        in
+
+
+     -->
+
+
+     <script>
+            function student(name,id,msg){
+                this.name=name;
+                this.id=id;
+                this.study=function(){console.log(msg)}
+            }
+            var s=new student("satvik",1315,"bad student");
+            console.log(s.study());
+    </script>
+</body>
+</html>

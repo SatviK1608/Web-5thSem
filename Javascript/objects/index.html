@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+     <script>
+
+            //Method 1
+            /*const student={
+                name:"Satvik"
+                ,id:1315
+                ,study:function(){console.log("method 1")}
+            }
+            student.display=function(){console.log("2nd fun")}
+            console.log(student)
+            console.log(student.study());*/
+
+
+
+
+
+            //Method 2
+            /* function student(name,id,msg){
+                 this.name=name;
+                 this.id=id;
+                 this.study=function(){console.log(msg)}
+            }
+            var s=new student("satvik",1315,"method 2");
+            console.log(s.study());*/
+
+
+            //Method 3
+            const Student=new Object();
+            Student['name']="satvik";
+            Student['age']=20;
+            Student.study=function(){console.log("hello")};
+            console.log(Student);
+            console.log(Student.study());
+            
+            
+    </script>
+</body>
+</html>

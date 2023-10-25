@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            height:100px;
+            width: 100px;
+            background-color: gainsboro;
+        }
+    /* if screen-width goes more than 300 this media query will get activate*/
+        @media only screen and (min-width: 300px){
+            .box{
+                height: 150px;
+                width: 150px;
+                background-color: brown;
+                
+            }
+            
+        }
+
+        /* if screen-width goes less than 300 this media query will get activate*/
+        @media only screen and (max-width: 300px){
+            .box{
+                height: 150px;
+                width: 150px;
+                background-color: rgb(101, 95, 95);
+            }
+            
+        }
+
+        /* if screen-width is >=500 and <=600 */
+        @media only screen and (min-width:500px) and (max-width: 600px){
+            .box{
+                height: 150px;
+                width: 150px;
+                background-color: rgb(221, 15, 135);
+            }
+            
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

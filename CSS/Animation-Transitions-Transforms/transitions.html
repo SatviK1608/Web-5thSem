@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btn{
+            height: 25px;
+            width: 150px;
+            border: 2px solid  black;
+            border-radius: 10px;
+
+            
+            transition-property:all;
+            transition-duration: 2s;
+            transition-timing-function: steps(3);
+            transition-delay:1s;
+
+            /* transition: all 2s steps(3) 1s */
+
+        }
+
+        .btn:hover{
+            height:30px;
+            width:160px;
+            border: 1px solid red;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <!-- Enables smooth animation b/w changes in CSS property values
+    
+        transition-property:Defines which CSS properties will transition
+        transition-duration:Sets how long the transition lasts
+        transition-delay:Specifies a delay before transition starts
+        transition-timing-function:Controls speed curve of the transition
+    -->
+
+
+    <button class="btn">Click Me</button>
+    
+</body>
+</html>

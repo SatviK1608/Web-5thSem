@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>This is para 1</p>
+    <p>This is para 2</p>
+    <p>This is para 3</p>
+    <p>This is para 4</p>
+    <button type="button" id="b">Click me</button>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script>
+
+        //docment.ready holds my javascript and jquery code until the whole page is rendered
+
+        $(document).ready(function(){
+            console.log("inside jquery");
+            $("p").click(function(){
+                console.log("hello");
+                // $("p").hide();     hides all p elements
+                $(this).hide();      //hides that p element on which we've clicked
+            });
+        });
+
+        
+           
+            
+
+
+
+    </script>
+</html>

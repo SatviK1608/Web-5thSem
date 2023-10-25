@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- In flex main-axis and cross-axis changes based upon the direction of flex -->
+
+    <style>
+         .container{
+            height:300px;
+            width:600px;
+            border:3px solid red;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;  
+            /*justify-content --> space-evenly will give equal space combined b/w elements whereas space-around will give equal space seprately b/w elements along main-axis*/
+            
+            
+            /* align-items: center;  */
+            align-items: baseline; 
+            /* align-item -->center will align along center of cross axis whereas baseline will align according to the text inside flex items */
+
+            /* flex-wrap:wrap;   */
+            /*wrap enables you to go into next line when size of container is not enough to fit all flex items*/
+            
+
+            /* align-content -> Aligns a flex container's lines within the flex container when there is extra space in the cross-axis, similar to how 'justify-content' aligns individual items within the main-axis. */
+
+        }
+        .box{
+            /* display: flex; */
+            height: 250px;
+            width:250px;
+            background-color:lightgreen;
+            margin:5px;
+            border:3px solid black;
+            text-align:center;
+        }
+        #box3{
+            /* align-self: center;    */
+            /* allows individual flex items to override the container's align-items property */
+
+            flex-shrink:2;
+            /* it determines how much a flex item will shrink relative to other items in flex container if there is insufficient space and works when nowrap*/
+
+            flex-grow:2;
+            /* it determines how much a flex item will grow relative to other items in flex container if there is extra space and works when nowrap*/
+
+
+            order:1;
+
+        }
+        #box1{
+            order:2;
+            /* determines the order in which these items must be placed inside container and must be given to every element to see changes else bydefault 0 */
+        }
+
+        #box2{
+            order: 3;
+        }
+
+    </style>
+
+</head>
+<body>
+    <!-- It is a 1D layout method of arranging items in rows or columns -->
+
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+    </div>
+    
+</body>
+</html>
